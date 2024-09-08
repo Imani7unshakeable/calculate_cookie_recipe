@@ -1,0 +1,30 @@
+# This program calculates ingredient adjustments for a cookie recipe.
+# Cassie Malin
+# 01/25/2024
+
+# class Ingredients:
+sugar = 1.5
+butter = 1
+flour = 2.75
+cookies = 48
+
+# totalFLour = (flour x number_of_cookies)/cookies
+
+# Define ingredient quantities for 48 cookies
+sugar_per_cookie = 1.5 / 48  # 1.5 cups of sugar divided by 48 cookies
+butter_per_cookie = 1 / 48   # 1 cup of butter divided by 48 cookies
+flour_per_cookie = 2.75 / 48  # 2.75 cups of flour divided by 48 cookies
+
+# Ask the user how many cookies they want to make
+num_cookies = int(input("Enter the number of cookies you want to make: "))
+
+# Calculate adjusted ingredient quantities
+sugar_needed = sugar_per_cookie * num_cookies
+butter_needed = butter_per_cookie * num_cookies
+flour_needed = flour_per_cookie * num_cookies
+
+# Display the adjusted ingredient quantities
+print(f"For {num_cookies} cookies, you'll need:")
+print(f"{sugar_needed:.2f} cups of sugar")
+print(f"{butter_needed:.2f} cups of butter")
+print(f"{flour_needed:.2f} cups of flour")
